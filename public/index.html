@@ -5,7 +5,11 @@
   <link rel="stylesheet" href="main.css">
   <script src="bundle.js" async></script>
 </head>
-<body>
+<body>	 
+	 <div data-controller="content-loader"
+	      data-content-loader-url="/messages.html"
+	      data-content-loader-refresh-interval="5000"></div>
+	
 	<div data-controller="clipboard">
 	  PIN: <input data-target="clipboard.source" type="text" value="1234" readonly>
 	  <button data-action="clipboard#copy">Copy to Clipboard</button>
